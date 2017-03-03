@@ -1,0 +1,19 @@
+# OSX #
+.DS_Store
+
+# Environmental Variables #
+**/.env
+*.saved
+*.log
+
+# testing #
+
+
+# Node.js #
+node_modules/
+npm-debug.log
+
+# Yarn #
+yarn.lock
+
+public
