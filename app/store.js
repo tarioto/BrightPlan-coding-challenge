@@ -37,9 +37,9 @@
 // }
 
 import { createStore } from 'redux';
-import appReducer from './containers/App/reducer';
+import rootReducer from './reducers';
 
 export default function configureStore() {
-  const store = createStore(appReducer);
+  const store = createStore(rootReducer);
   return store;
 }

@@ -42,7 +42,7 @@
 // }
 
 import { combineReducers } from 'redux';
-import appReducer from './dataReducer';
+import appReducer from './containers/App/reducer';
 
 const rootReducer = combineReducers({
   appReducer,
