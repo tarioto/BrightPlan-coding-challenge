@@ -5,6 +5,7 @@ const BUILD_DIR = path.resolve(__dirname, 'app/public');
 const APP_DIR = path.resolve(__dirname, 'app');
 
 const config = {
+  devtool: ['eval', 'source-map'],
   entry: ['bootstrap-loader' , APP_DIR + '/app.js'],
   output: {
     path: BUILD_DIR,
