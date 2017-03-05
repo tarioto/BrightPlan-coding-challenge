@@ -20,7 +20,14 @@ class DonutContainer extends React.Component {
 
     return (
       <svg width="100%" height="100%">
-        <Donut x={x} y={y} radius={radius} data={this.props.data} />
+        <Donut
+          x={x}
+          y={y}
+          innerRadius={radius * .35}
+          outerRadius={radius}
+          cornerRadius={7}
+          padAngle={.02}
+          data={this.props.data} />
       </svg>
     );
   }

@@ -23,11 +23,16 @@ class Donut extends React.Component {
   }
 
   renderSlice(value, i) {
+    let {innerRadius, outerRadius, cornerRadius, padAngle} = this.props;
     return (
       <Slice key={i}
-             outerRadius={this.props.radius}
-             value={value}
-             fill={this.colorScale(i)} />
+            innerRadius={innerRadius}
+            outerRadius={outerRadius}
+            cornerRadius={cornerRadius}
+            padAngle={padAngle}
+            value={value}
+            label={value.data}
+            fill={this.colorScale(i)} />
     );
   }
 }

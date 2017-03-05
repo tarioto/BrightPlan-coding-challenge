@@ -33,7 +33,7 @@ class App extends React.Component {
         <div className="row">
           <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 
-              <DonutContainer width={555} height={100} data={[5, 2, 7, 1, 1, 3, 4, 9]} />
+              <DonutContainer width={555} height={150} data={[5, 2, 7, 1, 1, 3, 4, 9]} />
 
           </div>
           <div className="well well-lg col-xs-12 col-sm-6 col-md-6 col-lg-6">
