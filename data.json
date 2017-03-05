@@ -1,0 +1,77 @@
+{
+    "0": {
+        "type": [ "gold", "bonds", "stocks", "real estate", "mutual funds"],
+        "data": [ 10, 20, 30, 20, 20 ]
+    },
+    "1": {
+        "gold": 10,
+        "bonds": 20,
+        "stocks": 30,
+        "real estate": 20,
+        "mutual funds": 20
+    },
+    "2": {
+        "gold": 10,
+        "bonds": 20,
+        "stocks": 30,
+        "real estate": 20,
+        "mutual funds": 20
+    },
+    "3": {
+        "gold": 10,
+        "bonds": 20,
+        "stocks": 30,
+        "real estate": 20,
+        "mutual funds": 20
+    },
+    "4": {
+        "gold": 10,
+        "bonds": 20,
+        "stocks": 30,
+        "real estate": 20,
+        "mutual funds": 20
+    },
+    "5": {
+        "gold": 10,
+        "bonds": 20,
+        "stocks": 30,
+        "real estate": 20,
+        "mutual funds": 20
+    },
+    "6": {
+        "gold": 10,
+        "bonds": 20,
+        "stocks": 30,
+        "real estate": 20,
+        "mutual funds": 20
+    },
+    "7": {
+        "gold": 10,
+        "bonds": 20,
+        "stocks": 30,
+        "real estate": 20,
+        "mutual funds": 20
+    },
+    "8": {
+        "gold": 10,
+        "bonds": 20,
+        "stocks": 30,
+        "real estate": 20,
+        "mutual funds": 20
+    },
+    "9": {
+        "gold": 10,
+        "bonds": 20,
+        "stocks": 30,
+        "real estate": 20,
+        "mutual funds": 20
+    },
+    "10": {
+        "gold": 10,
+        "bonds": 10,
+        "stocks": 10,
+        "real estate": 10,
+        "mutual funds": 60
+    }
+
+}
