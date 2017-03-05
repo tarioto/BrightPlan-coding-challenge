@@ -18,7 +18,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { PageHeader, DropdownButton, Grid, Row, Col, Clearfix, Panel } from 'react-bootstrap';
-import DonutContainer from '../Donut/index'
+import DonutContainer from '../Donut/index';
+import RiskTypeInputContainer from '../RiskTypeInput/index';
+import * as riskData from '../../../data';
+import RiskTypeInput from '../../components/RiskTypeInput/index'
 
 class App extends React.Component {
   render () {
@@ -32,36 +35,12 @@ class App extends React.Component {
       <div className="container-fluid">
         <div className="row">
           <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-              <DonutContainer data={[5, 2, 7, 1, 1, 3, 4, 9]} />
+              {/* <DonutContainer data={[5, 2, 7, 1, 1, 3, 4, 9]} /> */}
+              <DonutContainer data={Object.values(riskData['10'])} />
             </div>
-          <div className="well well-lg col-xs-12 col-sm-6 col-md-6 col-lg-6">
+          <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 
-            <div className="input-group">
-              <span className="input-group-addon">$</span>
-              <input type="text" className="form-control" aria-label="Amount (to the nearest dollar)" />
-              <span className="input-group-addon">.00</span>
-            </div>
-            <div className="input-group">
-              <span className="input-group-addon">$</span>
-              <input type="text" className="form-control" aria-label="Amount (to the nearest dollar)" />
-              <span className="input-group-addon">.00</span>
-            </div>
-            <div className="input-group">
-              <span className="input-group-addon">$</span>
-              <input type="text" className="form-control" aria-label="Amount (to the nearest dollar)" />
-              <span className="input-group-addon">.00</span>
-            </div>
-            <div className="input-group">
-              <span className="input-group-addon">$</span>
-              <input type="text" className="form-control" aria-label="Amount (to the nearest dollar)" />
-              <span className="input-group-addon">.00</span>
-            </div>
-            <div className="input-group">
-              <span className="input-group-addon">$</span>
-              <input type="text" className="form-control" aria-label="Amount (to the nearest dollar)" />
-              <span className="input-group-addon">.00</span>
-            </div>
-
+            <RiskTypeInputContainer amountTypes={Object.keys(riskData['10'])}/>
             <Panel>Look I'm in a well!</Panel>
 
           </div>
