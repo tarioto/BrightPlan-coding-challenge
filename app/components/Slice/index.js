@@ -21,7 +21,7 @@ class Slice extends React.Component {
     let {value, label, fill, innerRadius = 0, outerRadius, cornerRadius, padAngle, ...props} = this.props;
     // https://github.com/d3/d3/wiki/SVG-Shapes#arc
     if (this.state.isHovered) {
-      outerRadius *= 1.1;
+      outerRadius *= 1.2;
     }
 
     let arc = d3.arc()
