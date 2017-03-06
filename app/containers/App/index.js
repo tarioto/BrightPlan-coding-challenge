@@ -21,7 +21,6 @@ class App extends React.Component {
       <div className="container">
         <div className="row">
           <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6" style={{height: 400}}>
-            <div>
               <RiskDropDown />
               {risk !== 'Pick your risk number' ? (
                 <DonutContainer data={Object.values(riskData[risk])} />
@@ -29,8 +28,7 @@ class App extends React.Component {
                 <div></div>
               )
             }
-            </div>
-            </div>
+          </div>
           <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6">
             {/* <RiskTypeInputContainer amountTypes={Object.keys(riskData['1'])}/> */}
             <CategoryForm />

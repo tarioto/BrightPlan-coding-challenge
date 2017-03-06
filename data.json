@@ -2,9 +2,9 @@
     "1": {
         "gold": 10,
         "bonds": 20,
-        "stocks": 30,
+        "stocks": 20,
         "real estate": 20,
-        "mutual funds": 20
+        "mutual funds": 30
     },
     "2": {
         "gold": 10,
@@ -63,10 +63,10 @@
         "mutual funds": 20
     },
     "10": {
-        "gold": 10,
+        "gold": 15,
         "bonds": 10,
         "stocks": 10,
-        "real estate": 10,
+        "real estate": 50,
         "mutual funds": 60
     }
 

@@ -13,7 +13,6 @@ class Donut extends React.Component {
 
   render() {
     let {x, y, data} = this.props;
-    // https://github.com/d3/d3/wiki/Pie-Layout
     let pie = d3.pie();
     return (
       <g transform={`translate(${x}, ${y})`}>

@@ -6,6 +6,8 @@ import Donut from '../../components/Donut/index'
 
 class DonutContainer extends React.Component {
   render() {
+    console.log(this.props.containerWidth, 'width')
+    console.log(this.props.containerHeight, 'height')
     // let { width, height } = this.props;
     // For a real world project, use something like
     // https://github.com/digidem/react-dimensions
