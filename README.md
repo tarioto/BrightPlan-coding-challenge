@@ -3,6 +3,6 @@ A React + Redux app to calculate your ideal portfolio based on your risk assessm
 
 ## Installation
 
-npm install
-npm start
+npm install__
+npm start__
 http://localhost:3000/
