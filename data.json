@@ -1,8 +1,4 @@
 {
-    "0": {
-        "type": [ "gold", "bonds", "stocks", "real estate", "mutual funds"],
-        "data": [ 10, 20, 30, 20, 20 ]
-    },
     "1": {
         "gold": 10,
         "bonds": 20,

@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { DropdownButton } from 'react-bootstrap';
 import Dimensions from 'react-dimensions'
 import Donut from '../../components/Donut/index'
 
@@ -21,18 +22,16 @@ class DonutContainer extends React.Component {
     let y = height / 2;
 
     return (
-      // <div>
-        <svg width="100%" height="100%">
-          <Donut
-            x={x}
-            y={y}
-            innerRadius={radius * .35}
-            outerRadius={radius}
-            cornerRadius={7}
-            padAngle={.02}
-            data={this.props.data} />
-        </svg>
-      // </div>
+      <svg width="100%" height="100%">
+        <Donut
+          x={x}
+          y={y}
+          innerRadius={radius * .35}
+          outerRadius={radius}
+          cornerRadius={7}
+          padAngle={.02}
+          data={this.props.data} />
+      </svg>
     );
   }
 }
