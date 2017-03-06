@@ -6,7 +6,6 @@ import Slice from '../Slice/index'
 class Donut extends React.Component {
   constructor(props) {
     super(props);
-    // https://github.com/d3/d3/wiki/Ordinal-Scales#category10
     this.colorScale = d3.scaleOrdinal(d3.schemeCategory10);
     this.renderSlice = this.renderSlice.bind(this);
   }

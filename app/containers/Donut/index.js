@@ -6,20 +6,10 @@ import Donut from '../../components/Donut/index'
 
 class DonutContainer extends React.Component {
   render() {
-    console.log(this.props.containerWidth, 'width')
-    console.log(this.props.containerHeight, 'height')
-    // let { width, height } = this.props;
-    // For a real world project, use something like
-    // https://github.com/digidem/react-dimensions
-    // let width = window.innerWidth;
-    // let height = window.innerHeight;
     let width = this.props.containerWidth;
     let height = this.props.containerHeight;
     let minViewportSize = Math.min(width, height);
-    // This sets the radius of the pie chart to fit within
-    // the current window size, with some additional padding
     let radius = (minViewportSize * .7) / 2;
-    // Centers the pie chart
     let x = width / 2;
     let y = height / 2;
 
@@ -37,11 +27,5 @@ class DonutContainer extends React.Component {
     );
   }
 }
-
-// ReactDOM.render(
-//   // App takes one prop: the pie chart data as an array of values
-//   <DonutContainer data={[5, 2, 7, 1, 1, 3, 4, 9]} />,
-//   document.getElementById('DonutContainer')
-// );
 
 export default Dimensions([{elementResize: true}])(DonutContainer);

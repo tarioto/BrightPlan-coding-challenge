@@ -1,8 +1,6 @@
 import React, { PropTypes } from 'react';
 import { connect } from 'react-redux';
 import { formValueSelector } from 'redux-form';
-// import * as typeActions from './actions'
-// import RiskTypeInput from '../../components/RiskTypeInput/index'
 const selector = formValueSelector('category')
 
 const totalCalculator = (gold = 0, bonds = 0, stocks = 0, realEstate = 0, mutualFunds = 0) => {
@@ -10,10 +8,6 @@ const totalCalculator = (gold = 0, bonds = 0, stocks = 0, realEstate = 0, mutual
 }
 
 class Total extends React.Component {
-  constructor(props) {
-    super(props);
-    // this.calculateTotal = this.calculateTotal.bind(this);
-  }
 
   render() {
     let { gold, bonds, stocks, realEstate, mutualFunds } = this.props;
@@ -26,7 +20,7 @@ class Total extends React.Component {
         <h1>
           { total  }
         </h1>
-        <h1>
+        {/* <h1>
           { total * (percentages[0] * .01) - gold / total * 100 || 0 }
         </h1>
         <h1>
@@ -40,16 +34,12 @@ class Total extends React.Component {
         </h1>
         <h1>
           { total * (percentages[4] * .01) - mutualFunds / total * 100 || 0 }
-        </h1>
+        </h1> */}
       </div>
     );
   }
 
 }
-
-Total.propTypes = {
-  // gold: PropTypes.number,
-};
 
 const mapStateToProps = (state) => {
   return {
@@ -61,10 +51,10 @@ const mapStateToProps = (state) => {
   };
 }
 
-const mapDispatchToProps = (dispatch) => {
+function mapDispatchToProps(dispatch) {
   return {
-    // changeValue: (value) => dispatch(typeActions.changeValue(value)),
   };
 }
+
 
 export default connect(mapStateToProps, mapDispatchToProps)(Total);

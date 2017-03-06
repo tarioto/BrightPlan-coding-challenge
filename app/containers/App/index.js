@@ -32,7 +32,6 @@ class App extends React.Component {
             }
           </div>
           <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-            {/* <RiskTypeInputContainer amountTypes={Object.keys(riskData['1'])}/> */}
             <CategoryForm />
             {
               risk !== 'Pick your risk number' ? (
@@ -59,7 +58,6 @@ class App extends React.Component {
 
 App.propTypes = {
   risk: PropTypes.string,
-  // appData: PropTypes.object,
 };
 
 function mapStateToProps(state) {
@@ -70,7 +68,6 @@ function mapStateToProps(state) {
 
 function mapDispatchToProps(dispatch) {
   return {
-    // fetchData: () => dispatch(fetchData()),
   };
 }
 
