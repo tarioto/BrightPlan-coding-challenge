@@ -48,7 +48,7 @@ class App extends React.Component {
         <hr></hr>
         <footer className="footer">
           <div className="container">
-            <p className="text-muted">Place sticky footer content here.</p>
+            <p className="text-muted">made by tim arioto</p>
           </div>
         </footer>
       </div>
