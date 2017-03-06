@@ -5,7 +5,6 @@ import * as riskActions from './actions';
 
 const RiskDropDown = (props) => {
   const { changeRisk, risk } = props;
-  console.log(risk)
   return (
     <div className="dropdown">
       <button className="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">

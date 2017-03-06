@@ -13,11 +13,11 @@ class RiskTypeInputContainer extends React.Component {
 
     return (
       <div>
-        <RiskTypeInput amount={amountTypes[0]}/>
-        <RiskTypeInput amount={amountTypes[1]}/>
-        <RiskTypeInput amount={amountTypes[2]}/>
-        <RiskTypeInput amount={amountTypes[3]}/>
-        <RiskTypeInput amount={amountTypes[4]}/>
+        <RiskTypeInput typeOfAmount={amountTypes[0]}/>
+        <RiskTypeInput typeOfAmount={amountTypes[1]}/>
+        <RiskTypeInput typeOfAmount={amountTypes[2]}/>
+        <RiskTypeInput typeOfAmount={amountTypes[3]}/>
+        <RiskTypeInput typeOfAmount={amountTypes[4]}/>
       </div>
     );
   }

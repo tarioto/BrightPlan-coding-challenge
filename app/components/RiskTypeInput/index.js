@@ -3,10 +3,10 @@ import * as riskData from '../../../data';
 
 class RiskTypeInput extends React.Component {
   render() {
-    let { amount } = this.props;
+    let { typeOfAmount } = this.props;
     return (
       <div className="input-group">
-        <span className="input-group-addon">{ amount }</span>
+        <span className="input-group-addon">{ typeOfAmount }</span>
         <input type="text" className="form-control" aria-label="Amount (to the nearest dollar)" />
         <span className="input-group-addon">.00</span>
       </div>
