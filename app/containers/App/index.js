@@ -8,6 +8,7 @@ import CategoryForm from '../Form/index'
 import * as riskData from '../../../data';
 import RiskDropDown from '../../components/RiskDropDown/index'
 import RiskTypeInput from '../../components/RiskTypeInput/index'
+import Total from '../../components/Total/index'
 
 class App extends React.Component {
   render () {
@@ -32,6 +33,7 @@ class App extends React.Component {
           <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6">
             {/* <RiskTypeInputContainer amountTypes={Object.keys(riskData['1'])}/> */}
             <CategoryForm />
+            <Total />
           </div>
         </div>
       </div>

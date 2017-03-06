@@ -1,11 +1,10 @@
-import React from 'react'
-import { Field, reduxForm } from 'redux-form'
+import React, { PropTypes } from 'react';
+import { connect } from 'react-redux';
+import { Field, reduxForm, formValueSelector } from 'redux-form'
 
 const CategoryForm = (props) => {
   const { handleSubmit, pristine, reset, submitting } = props
   return (
-
-
     <form onSubmit={handleSubmit}>
       <div className="form-group">
         <label>Type the $ you have for each catigory</label>
