@@ -23,7 +23,8 @@ class App extends React.Component {
         <div className="row">
           <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6" style={{height: 400}}>
               <RiskDropDown />
-              {risk !== 'Pick your risk number' ? (
+              {
+                risk !== 'Pick your risk number' ? (
                 <DonutContainer data={Object.values(riskData[risk])} />
               ) : (
                 <div></div>
@@ -33,7 +34,13 @@ class App extends React.Component {
           <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6">
             {/* <RiskTypeInputContainer amountTypes={Object.keys(riskData['1'])}/> */}
             <CategoryForm />
-            <Total />
+            {
+              risk !== 'Pick your risk number' ? (
+              <Total data={Object.values(riskData[risk])}/>
+            ) : (
+              <Total />
+            )
+          }
           </div>
         </div>
       </div>

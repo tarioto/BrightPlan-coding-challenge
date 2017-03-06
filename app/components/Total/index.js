@@ -8,6 +8,7 @@ const selector = formValueSelector('category')
 const totalCalculator = (gold = 0, bonds = 0, stocks = 0, realEstate = 0, mutualFunds = 0) => {
   return Number(gold) + Number(bonds) + Number(stocks) + Number(realEstate) + Number(mutualFunds)
 }
+
 class Total extends React.Component {
   constructor(props) {
     super(props);
@@ -17,10 +18,28 @@ class Total extends React.Component {
   render() {
     let { gold, bonds, stocks, realEstate, mutualFunds } = this.props;
 
+    let total = totalCalculator(gold, bonds, stocks, realEstate, mutualFunds);
+    let percentages = this.props.data || [];
+
     return (
       <div>
         <h1>
-          { totalCalculator(gold, bonds, stocks, realEstate, mutualFunds) }
+          { total  }
+        </h1>
+        <h1>
+          { total * (percentages[0] * .01) - gold / total * 100 || 0 }
+        </h1>
+        <h1>
+          { total * (percentages[1] * .01) - bonds / total * 100 || 0 }
+        </h1>
+        <h1>
+          { total * (percentages[2] * .01) - stocks / total * 100 || 0 }
+        </h1>
+        <h1>
+          { total * (percentages[3] * .01) - realEstate / total * 100 || 0 }
+        </h1>
+        <h1>
+          { total * (percentages[4] * .01) - mutualFunds / total * 100 || 0 }
         </h1>
       </div>
     );

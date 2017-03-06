@@ -11,7 +11,6 @@ const CategoryForm = (props) => {
         <div className="input-group">
           <span className="input-group-addon" style={{backgroundColor: '#1f77b4', color: 'white'}}>Gold</span>
           <Field name="gold" component="input" type="number" placeholder="1,000,000" className="form-control"/>
-          <span className="input-group-addon">.00</span>
         </div>
       </div>
       <div className="form-group">
